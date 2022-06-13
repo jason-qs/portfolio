@@ -1,17 +1,55 @@
-* {
+body {
     display: flex;
     flex-direction: row-reverse;
+    background-color: #fffff2;
 }
 
 header {
-    background-color: aqua;
-    height: 10%;
-    width: 100%;
+    background-color: rgba(64, 64, 64, 0.666);
+    height: 100%;
+    width: 15%;
     flex-direction: column;
+    text-align: end;
+    position: fixed;
 }
 
 #first {
     background-color: brown;
-    height: 80%;
+    height: 30em;
     width: 100%;
+}
+#under {
+    flex-flow: column;
+}
+
+#top {
+    width: 100%;
+    height: 60em;
+}
+
+
+.sub {
+    height: 25em;
+    width: 85%;
+    margin-top: 5em;
+    background-color: aqua;
+    flex-flow: row wrap;
+}
+
+.sub img{
+    height: 100%;
+    width: 60%;
+}
+.sub p {
+    background-color: rebeccapurple;
+   height: 100%;
+   width: 30%;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
 }
