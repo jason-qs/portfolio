@@ -1,3 +1,12 @@
+/*
+white: FFFFF2
+Azure: 3F84E5
+Red Ncs: B20D30
+Raisin Black: 272727
+Antique Brass: CA907E
+
+*/
+
 body {
     display: flex;
     flex-direction: row-reverse;
@@ -11,6 +20,24 @@ header {
     flex-direction: column;
     text-align: end;
     position: fixed;
+}
+#parallax {
+    background-image: url("first.jpg");
+    min-height: 500px;
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#overlay {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    top: 2em;
+    left: 1em;
+    text-align: left;
 }
 
 #first {
@@ -32,16 +59,21 @@ header {
     height: 25em;
     width: 85%;
     margin-top: 5em;
-    background-color: aqua;
     flex-flow: row wrap;
 }
 
+#second img {
+     margin-right: 2em;
+}
+
+#second p {
+    margin:0 0 2em 2em;
+}
 .sub img{
     height: 100%;
     width: 60%;
 }
 .sub p {
-    background-color: rebeccapurple;
    height: 100%;
    width: 30%;
 }
@@ -53,3 +85,16 @@ header {
 .left {
     float: left;
 }
+
+@media screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+        background-color: aqua;
+    }
+
+    header {
+        background-color: rgb(64, 64, 64);
+        height: 10%;
+        width: 100%;
+    }
+  }
