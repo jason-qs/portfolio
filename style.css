@@ -55,6 +55,8 @@ nav a {
 }
 #under {
     flex-flow: column;
+    border-radius: 3em;
+    background-color: #fffff2;
 }
 
 #top {
@@ -66,16 +68,21 @@ nav a {
 .sub {
     height: 25em;
     width: 85%;
-    margin-top: 5em;
+    margin-top: -5em;
     flex-flow: row wrap;
+    padding-top: 2em;
 }
+#second {
 
+    border-radius: 1em;
+}
 #second img {
      margin-right: 2em;
 }
 
 #second p {
     margin:0 0 2em 2em;
+    
 }
 .sub img{
     height: 100%;
@@ -97,7 +104,6 @@ nav a {
 @media screen and (max-width: 600px) {
     body {
         flex-direction: column;
-        background-color: aqua;
     }
 
     header {
