@@ -14,16 +14,24 @@ body {
 }
 
 header {
-    background-color: rgba(64, 64, 64, 0.666);
+    background-color: rgba(64, 64, 64, 0.15);
+    backdrop-filter: blur(8px);
     height: 100%;
     width: 15%;
     flex-direction: column;
     text-align: end;
     position: fixed;
+    font-style: normal;
+    font-display: none;
+}
+
+nav a {
+    font-size: 3em;
+    color: #B20D30;
 }
 #parallax {
     background-image: url("first.jpg");
-    min-height: 500px;
+    min-height: 100%;
     background-attachment:fixed;
     background-position: center;
     background-repeat: no-repeat;
