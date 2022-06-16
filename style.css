@@ -9,25 +9,26 @@ Antique Brass: CA907E
 
 body {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     background-color: #fffff2;
 }
 
 header {
-    background-color: rgba(64, 64, 64, 0.15);
-    backdrop-filter: blur(8px);
-    height: 100%;
-    width: 15%;
-    flex-direction: column;
-    text-align: end;
-    position: fixed;
-    font-style: normal;
+    background-color: #272727;
+    height: 10%;
+    width: 100%;
     font-display: none;
+    text-align: center;
+    position:  fixed;
+    border-radius: 2em;
+    z-index: 1;
 }
 
 nav a {
     font-size: 3em;
     color: #B20D30;
+    margin-right: 2em;
+    margin-left: 2em;
 }
 #parallax {
     background-image: url("first.jpg");
@@ -36,6 +37,7 @@ nav a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 0;
 }
 
 #overlay {
@@ -43,14 +45,17 @@ nav a {
     text-align: center;
     color: white;
     font-size: 3em;
-    top: 2em;
-    left: 1em;
+    top: 0em;
+    left: 0em;
+    padding-left: 1.5em;
+    padding-top: 1em;
     text-align: left;
-    /*
+    background-color: rgba(64, 64, 64, 0.15);
+    z-index: 1;
     background-color: rgba(64, 64, 64, 0.15);
     backdrop-filter: blur(8px);
-    height: 60em;
-    */
+    height: 130%;
+    z-index: 0;
 }
 
 #first {
@@ -60,8 +65,10 @@ nav a {
 }
 #under {
     flex-flow: column;
+    position: relative;
     border-radius: 3em;
     background-color: #fffff2;
+    z-index: 2;
 }
 
 #top {
@@ -76,6 +83,8 @@ nav a {
     margin-top: -5em;
     flex-flow: row wrap;
     padding-top: 2em;
+    z-index: 1;
+    padding: auto;
 }
 #second {
 
@@ -102,6 +111,7 @@ nav a {
     height: 40em;
     width: 100%;
     background-color: #3F84E5;
+    background-color: #fffff2;
 }
 
 .right {
