@@ -46,6 +46,11 @@ nav a {
     top: 2em;
     left: 1em;
     text-align: left;
+    /*
+    background-color: rgba(64, 64, 64, 0.15);
+    backdrop-filter: blur(8px);
+    height: 60em;
+    */
 }
 
 #first {
@@ -91,6 +96,12 @@ nav a {
 .sub p {
    height: 100%;
    width: 30%;
+}
+
+.sub2{
+    height: 40em;
+    width: 100%;
+    background-color: #3F84E5;
 }
 
 .right {
