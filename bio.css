@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #fffff2;
+}
+
+header {
+    background-color: #272727;
+    height: 10%;
+    width: 100%;
+    font-display: none;
+    text-align: center;
+    position:  fixed;
+    border-radius: 2em;
+    z-index: 1;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a {
+    font-size: 3em;
+    color: #B20D30;
+    justify-content: space-evenly;
+
+}

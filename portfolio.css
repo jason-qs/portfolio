@@ -1,0 +1,68 @@
+/*
+white: FFFFF2
+Azure: 3F84E5
+Red Ncs: B20D30
+Raisin Black: 272727
+Antique Brass: CA907E
+
+*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFF2;
+    background: linear-gradient(110deg, #fdcc3b00 60%, #ffed4b 60%);
+    background: linear-gradient(110deg, #3bfdc3 60%, #ffed4b00 60%);
+}
+
+#white{
+    background: linear-gradient(110deg, #3bfdc3 60%, #ffed4b00 60%);
+}
+
+#azure{
+
+}
+
+#red {
+
+}
+
+#black {
+
+}
+
+#brown{
+
+}
+
+header {
+    background-color: #272727;
+    height: 10%;
+    width: 100%;
+    font-display: none;
+    text-align: center;
+    position:  fixed;
+    border-radius: 2em;
+    z-index: 1;
+}
+nav a {
+    font-size: 3em;
+    color: #B20D30;
+    margin-right: 2em;
+    margin-left: 2em;
+}
+
+img{
+    width:40em;
+    height:30em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2em;
+}
+
+#main{
+    width:100%;
+    background-color: rgba(255, 0, 0, 0.053);
+    backdrop-filter: blur(8px);
+    border-radius: 2em;
+}
