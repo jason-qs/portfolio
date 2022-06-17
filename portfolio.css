@@ -88,6 +88,7 @@ img{
     width:40%;
     height:90%;
     margin-left: 2em;
+    margin-right: 2em;
     border-radius: 2em;
 }
 
@@ -114,11 +115,9 @@ img{
 
 #main img{
     box-shadow: 10px 5px 5px #3F84E5;
-}
-
-#main img:hover{
     animation: myAnim 1s ease 0s 1 alternate forwards;
 }
+
 
 @keyframes myAnim {
 	0% {
