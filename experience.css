@@ -1,0 +1,126 @@
+/*
+white: #FFFFF2
+Azure: #3F84E5
+Red Ncs: #B20D30
+Raisin Black: #272727
+Antique Brass: #CA907E
+
+*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFF2;
+}
+
+footer{
+    height:10em;
+    width: 100%;
+    background-color: #3F84E5;
+    margin-top: 12em;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em ;
+}
+
+#azure{
+    background: linear-gradient(160deg, #3f84e500 60%, #3F84E5 60%);
+    height: 60em;
+    width: 100%;
+    margin-top: -50em;
+}
+
+#red {
+    background: linear-gradient(160deg, #B20D30 60%, #b20d3100 60%);
+    height: 60em;
+    width: 100%;
+}
+
+#black {
+    background: linear-gradient(160deg, #27272700 60%, #272727 60%);
+    height: 60em;
+    width: 100%;
+    margin-top: -50em;
+}
+
+#brown{
+    background: linear-gradient(160deg, #CA907E 60%, #ffed4b00 60%);
+    height: 60em;
+    width: 100%;
+}
+#container {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+}
+
+header {
+    background-color: #272727;
+    height: 10%;
+    width: 100%;
+    font-display: none;
+    text-align: center;
+    position:  fixed;
+    border-radius: 2em;
+    z-index: 1;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a {
+    font-size: 3em;
+    color: #B20D30;
+    justify-content: space-evenly;
+
+}
+
+img{
+    width:40%;
+    height:90%;
+    margin-left: 2em;
+    border-radius: 2em;
+}
+
+#main{
+    height: 30em;
+    width:90%;
+    background-color: rgba(68, 68, 68, 0.053);
+    backdrop-filter: blur(3em);
+    border-radius: 2em;
+    margin-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+.back {
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30em;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5em;
+    margin-top: 2em;
+}
+
+@media screen and (max-width: 770px) {
+    body {
+        flex-direction: column;
+    }
+
+    header {
+        background-color: rgb(64, 64, 64);
+        height: 10%;
+        width: 100%;
+    }
+  }
