@@ -11,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #FFFFF2;
+    font-family: 'Montserrat', sans-serif;
 }
 
 footer{
@@ -20,6 +21,14 @@ footer{
     margin-top: 12em;
     border-top-left-radius: 2em;
     border-top-right-radius: 2em ;
+    display: flex;
+    color: #FFFFF2;
+}
+
+footer h2{
+    margin: auto;
+
+
 }
 
 #azure{
@@ -61,7 +70,7 @@ header {
     text-align: center;
     position:  fixed;
     border-radius: 2em;
-    z-index: 1;
+    z-index: 3;
 }
 nav {
     display: flex;
@@ -69,10 +78,11 @@ nav {
 }
 nav a {
     font-size: 3em;
-    color: #B20D30;
+    color: #FFFFF2;
     justify-content: space-evenly;
 
 }
+
 
 img{
     width:40%;
@@ -94,6 +104,29 @@ img{
     align-items: center;
     z-index: 1;
     position: relative;
+}
+
+#main p {
+    color: #FFFFF2;
+    text-align: end;
+    font-size: 1.5em;
+}
+
+#main img{
+    box-shadow: 10px 5px 5px #3F84E5;
+    animation: myAnim 1s ease 0s 1 alternate forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale(0.5);
+		transform-origin: 100% 50%;
+	}
+
+	100% {
+		transform: scale(1);
+		transform-origin: 100% 50%;
+	}
 }
 
 .back {
@@ -119,8 +152,22 @@ h1 {
     }
 
     header {
-        background-color: rgb(64, 64, 64);
         height: 10%;
         width: 100%;
+        font-size: .75em;
     }
+
+    #main {
+        width: 100%;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    #main p {
+        text-align: center;
+    }
+    #main img{
+        width: 80%;
+    }
+
   }

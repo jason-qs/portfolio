@@ -11,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #fffff2;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -29,7 +30,7 @@ nav {
 }
 nav a {
     font-size: 3em;
-    color: #B20D30;
+    color: #fffff2;
     justify-content: space-evenly;
 
 }
@@ -41,6 +42,14 @@ footer{
     margin-top: 12em;
     border-top-left-radius: 2em;
     border-top-right-radius: 2em ;
+    display: flex;
+    color: #FFFFF2;
+}
+
+footer h2{
+    margin: auto;
+    
+
 }
 #parallax {
     background-image: url("first.jpg");
@@ -70,7 +79,6 @@ footer{
 }
 
 #first {
-    background-color: brown;
     height: 30em;
     width: 100%;
 }
@@ -124,12 +132,7 @@ footer{
    margin-right: 4em;
 }
 
-.sub2{
-    height: 15em;
-    width: 100%;
-    background-color: #3F84E5;
-    background-color: #fffff2;
-}
+
 
 #background{
     background-color: #CA907E;
@@ -146,7 +149,7 @@ footer{
     float: left;
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1150px) {
     body {
         flex-direction: column;
     }
@@ -155,5 +158,66 @@ footer{
         background-color: rgb(64, 64, 64);
         height: 10%;
         width: 100%;
+        z-index: 3;
+    }
+
+    #second {
+        display: flex;
+    }
+
+    #third {
+        display: flex;
+    }
+
+    #background{
+        background-color: #fffff2;
+        z-index: -3;
+    }
+    .right {
+        float: none;
+    }
+    .left {
+        float: none;
+        margin: 0;
+    }
+    .sub p{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .sub {
+        height: 100%;
+        width: 85%;
+        margin:0;
+        margin-left: auto;
+        margin-right: auto;
+        flex-flow: row wrap;
+        padding-top: 2em;
+        z-index: 1;
+    }
+    #overlay {
+        margin-top: 2em;
+        font-size: 2.5em;
+    }
+    .sub img{
+        height: 30em;
+        width: 100%;
+        border-radius: 2em;
+    }
+    #second p{
+        margin: 0;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    #second img{
+        margin: 0;
+    }
+    #third p {
+        margin: 0;
+    }
+    #third img{
+        margin: 0;
     }
   }

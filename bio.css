@@ -7,19 +7,39 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Montserrat', sans-serif;
 }
 
-#white{
-    background: linear-gradient(110deg, #FFFFF2 30%, #ffed4b00 70%);
-    height: 20em;
-    width: 80%;
-    margin-top: 12em;
-}
 
 #azure{
     background: linear-gradient(110deg, #3F84E5 30%, #ffed4b00 70%);
     height: 20em;
     width: 80%;
+}
+
+#azure:hover {
+    animation: myAnim2 1s ease 0s 1 forwards;
+}
+
+@keyframes myAnim2 {
+	0% {
+        background: linear-gradient(110deg, #3F84E5 30%, #ffed4b00 70%);
+        height: 20em;
+        width: 80%;
+	}
+
+    50% {
+        background: linear-gradient(110deg, #3F84E5 30%, #3F84E587 70%);
+        height: 20em;
+        width: 85%;
+    }
+
+	100% {
+		background: none;
+        background-color:#3F84E5 ;
+        height: 20em;
+        width: 90%;
+	}
 }
 
 #red {
@@ -34,10 +54,65 @@ body {
     width: 80%;
 }
 
+#brown:hover {
+    animation: myAnim 1s ease 0s 1 forwards;
+}
+
+@keyframes myAnim {
+	0% {
+        background: linear-gradient(110deg, #CA907E 30%, #ffed4b00 70%);
+        height: 20em;
+        width: 80%;
+	}
+
+    50% {
+        background: linear-gradient(110deg, #CA907E 30%, #ca907e87 70%);
+        height: 20em;
+        width: 85%;
+    }
+
+	100% {
+		background: none;
+        background-color:#CA907E ;
+        height: 20em;
+        width: 90%;
+	}
+}
+
 #brown{
     background: linear-gradient(110deg, #CA907E 30%, #ffed4b00 70%);
     height: 20em;
     width: 80%;
+}
+
+#brown:hover {
+    animation: myAnim 1s ease 0s 1 forwards;
+}
+
+@keyframes myAnim {
+	0% {
+        background: linear-gradient(110deg, #CA907E 30%, #ffed4b00 70%);
+        height: 20em;
+        width: 80%;
+	}
+
+    50% {
+        background: linear-gradient(110deg, #CA907E 30%, #ca907e87 70%);
+        height: 20em;
+        width: 85%;
+    }
+
+	100% {
+		background: none;
+        background-color:#CA907E ;
+        height: 20em;
+        width: 90%;
+	}
+}
+
+
+.main {
+    color: #FFFFF2
 }
 
 
@@ -56,8 +131,8 @@ nav {
     justify-content: space-evenly;
 }
 nav a {
-    font-size: 3em;
-    color: #B20D30;
+    font-size: 2.5em;
+    color: #FFFFF2;
     justify-content: space-evenly;
 
 }
@@ -67,9 +142,17 @@ footer{
     height:10em;
     width: 100%;
     background-color: #3F84E5;
-    margin-top: 6em;
+    margin-top: 12em;
     border-top-left-radius: 2em;
     border-top-right-radius: 2em ;
+    display: flex;
+    color: #FFFFF2;
+}
+
+footer h2{
+    margin: auto;
+    
+
 }
 
 @media screen and (max-width: 770px) {
@@ -78,37 +161,53 @@ footer{
     }
 
     header {
-        background-color: rgb(64, 64, 64);
         height: 10%;
         width: 100%;
+        font-size: .6em;
     }
 
     #white{
-        background-color: #FFFFF2;
+        background: none;
+        background-color: #FFFFF2a7;
+        backdrop-filter: blur(8px);
+        border-radius: 2em;
         height: 20em;
         width: 100%;
+        
     }
     
     #azure{
-        background-color: #3F84E5;
+        background: none;
+        background-color: #3F84E5a7;
+        backdrop-filter: blur(8px);
+        border-radius: 2em;
         height: 20em;
         width: 100%;
     }
     
     #red {
-        background-color: #B20D30;
+        background: none;
+        background-color: #B20D30a7;
+        backdrop-filter: blur(8px);
+        border-radius: 2em;
         height: 20em;
         width: 100%;
     }
     
     #black {
-        background-color: #272727;
+        background: none;
+        background-color: #272727a7;
+        backdrop-filter: blur(8px);
+        border-radius: 2em;
         height: 20em;
         width: 100%;
     }
     
     #brown{
-        background-color: #CA907E;
+        background: none;
+        background-color: #ca907ea7;
+        backdrop-filter: blur(8px);
+        border-radius: 2em;
         height: 20em;
         width: 100%;
     }
